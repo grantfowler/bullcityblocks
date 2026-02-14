@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+.astro/
+
+# environment
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

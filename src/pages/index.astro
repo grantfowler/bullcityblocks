@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Coming Soon">
+  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-durham-900 via-durham-800 to-concrete-900">
+    <div class="max-w-2xl mx-auto px-6 py-16 text-center">
+      
+      <!-- Icon -->
+      <div class="mb-8">
+        <span class="text-6xl">🏗️</span>
+      </div>
+      
+      <!-- Name -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl text-white font-bold mb-4 tracking-tight">
+        Bull City Blocks
+      </h1>
+      
+      <!-- Tagline -->
+      <p class="text-xl sm:text-2xl text-durham-300 mb-8">
+        Durham Development News
+      </p>
+      
+      <!-- Description -->
+      <div class="max-w-lg mx-auto mb-12">
+        <p class="text-lg text-concrete-300 leading-relaxed">
+          Tracking what's being built, torn down, and transformed across Durham, NC. 
+          From high-rises to infrastructure, permits to ribbon cuttings.
+        </p>
+      </div>
+      
+      <!-- Divider -->
+      <div class="flex items-center justify-center gap-4 mb-12">
+        <div class="h-px w-16 bg-durham-600"></div>
+        <svg class="w-5 h-5 text-durham-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 01-1.707.707L10 12.414l-4.293 4.293A1 1 0 014 16V4z" clip-rule="evenodd" />
+        </svg>
+        <div class="h-px w-16 bg-durham-600"></div>
+      </div>
+      
+      <!-- Topics Preview -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-md mx-auto mb-12">
+        <div class="text-center">
+          <div class="text-2xl mb-1">🏢</div>
+          <p class="text-xs text-concrete-400 uppercase tracking-wide">High-Rises</p>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl mb-1">🚧</div>
+          <p class="text-xs text-concrete-400 uppercase tracking-wide">Infrastructure</p>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl mb-1">📋</div>
+          <p class="text-xs text-concrete-400 uppercase tracking-wide">Permits</p>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl mb-1">🗺️</div>
+          <p class="text-xs text-concrete-400 uppercase tracking-wide">Zoning</p>
+        </div>
+      </div>
+      
+      <!-- Email Signup -->
+      <div class="max-w-md mx-auto">
+        <p class="text-sm text-concrete-400 mb-4 uppercase tracking-wide">
+          Get notified when we launch
+        </p>
+        
+        <form 
+          action="https://formspree.io/f/YOUR_FORM_ID" 
+          method="POST"
+          class="flex flex-col sm:flex-row gap-3"
+        >
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="your@email.com"
+            required
+            class="flex-grow px-4 py-3 rounded-lg border border-durham-700 bg-durham-900/50 text-white placeholder-concrete-500 focus:outline-none focus:ring-2 focus:ring-durham-400 focus:border-transparent"
+          />
+          <button 
+            type="submit"
+            class="px-6 py-3 bg-durham-500 text-white font-medium rounded-lg hover:bg-durham-400 transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+        
+        <p class="text-xs text-concrete-500 mt-4">
+          No spam. Just Durham development updates.
+        </p>
+      </div>
+      
+      <!-- Footer -->
+      <div class="mt-16 text-sm text-concrete-500">
+        <p>© 2026 Bull City Blocks</p>
+      </div>
+      
+    </div>
+  </div>
+</BaseLayout>

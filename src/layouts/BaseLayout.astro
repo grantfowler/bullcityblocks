@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Durham development news and urban planning coverage" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <title>{title} | Bull City Blocks</title>
+    <meta name="description" content={description} />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} | Bull City Blocks`} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Umami Analytics (self-hosted) -->
+    <script defer src="https://analytics.fowler.haus/script.js" data-website-id="bullcityblocks"></script>
+    
+    <!-- Global styles -->
+    <style is:global>
+      @import '../styles/global.css';
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <main class="flex-grow">
+      <slot />
+    </main>
+  </body>
+</html>
